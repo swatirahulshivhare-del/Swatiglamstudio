@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="hello">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwatiGlamStudio | Best Makeup Artist</title>
+    <style>
+        /* CSS STYLES */
+        :root {
+            --primary-color: #d4af37; /* Gold */
+            --dark-color: #1a1a1a;    /* Black */
+            --light-color: #f4f4f4;   /* White/Grey */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--dark-color);
+            color: #fff;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            margin-top: 60px;
+        }
+
+        .hero-content h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+            font-family: 'Times New Roman', serif;
+        }
+
+        .hero-content p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            background-color: var(--primary-color);
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            border: 2px solid var(--primary-color);
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: transparent;
+            color: var(--primary-color);
+        }
+  
+        /* Services Section */
+        .services {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: var(--dark-color);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .service-card {
+            background: var(--light-color);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Portfolio Section */
+        .portfolio {
+            background-color: var(--light-color);
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            padding: 0 20px;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        footer {
+            background-color: var(--dark-color);
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero-content h1 { font-size: 30px; }
+            nav { display: none; } /* Simple hide for mobile in this basic example */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">SwatiGlamStudio [Swati Shivhare]</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">होम</a></li>
+                    <li><a href="#services">सर्विसेज</a></li>
+                    <li><a href="#portfolio">पोर्टफोलियो</a></li>
+                    <li><a href="#contact">संपर्क</a>09827769165</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>सुंदरता का नया आयाम</h1>
+            <p>प्रोफेशनल ब्राइडल और पार्टी मेकअप आर्टिस्ट</p>
+            <a href="#contact" class="btn">अपॉइंटमेंट बुक करें</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+          <section id="About Me" class="About Me">
+               <h2 class="section-title">About Me</h2>
+           <div class="services-grid">
+               <div class="service-card">
+       <h3>I'm a Professional makeup artist passionate about enhancing natural beauty through creativity and precision from bridal glam to additional Looks I love helping every bride deserves to feel confident and radiant with an eye for detail and a love for</h3>
+      
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2 class="section-title">Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>ब्राइडल मेकअप</h3>
+                <p>शादी, एग्जीक्यूशन, रिसेप्शन और राखी के लिए खास पैकेज।</p>
+            </div>
+            <div class="service-card">
+                <h3>पार्टी मेकअप</h3>
+                <p>बर्थडे, एनिवर्सरी और फैशन शो के लिए ग्लैमर लुक।</p>
+            </div>
+            <div class="service-card">
+                <h3>एयरब्रश मेकअप</h3>
+                <p>लॉन्ग लास्टिंग और नैचरल फिनिश के लिए एयरब्रश तकनीक।</p>
+            </div>
+            <div class="service-card">
+                <h3>साड़ी ड्रेपिंग</h3>
+                <p>आधुनिक और पारंपरिक साड़ी ड्रेपिंग स्टाइल।</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <h2 class="section-title">पोर्टफोलियो</h2>
+        <div class="portfolio-grid">
+            <!-- Placeholder Images from Unsplash -->
+            <div class="portfolio-item"><img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Makeup 1"></div>
+            <div class="portfolio-item"><img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Makeup 2"></div>
+            <div class="portfolio-item"><img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Makeup 3"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">बुकिंग के लिए संपर्क करें</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="E-Mail" required>
+            <input type="tel" placeholder="Contact Number" required>
+            <select>
+                <option>Type of makeup</option>
+                <option>Bridal Makeup</option>
+                <option>Engagement Makeup</option>
+                <option>Party Makeup</option>
+                <option>Occasion Makeup</option>
+                <option>Reception Makeup</option>
+                <option>Photoshoot Makeup</option>
+                <option>Haldi Makeup</option>
+                <option>Skin services</option>
+                <option>Hair Styling & Draping</option>
+                <option>Nail Art</option>
+            </select>
+            <textarea rows="5" placeholder="Your Massage.."></textarea>
+            <button type="submit" class="btn">Thanks to visit my site
